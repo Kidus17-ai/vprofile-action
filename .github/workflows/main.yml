@@ -35,7 +35,7 @@ jobs:
 
       # Run SonarQube Scanner
       - name: SonarQube Scan
-        run: 
+        run: |
           sonar-scanner -X \
             -Dsonar.host.url=${{ secrets.SONAR_URL }} \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }} \
